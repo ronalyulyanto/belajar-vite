@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Viteee</title>
+  <link href="css/global.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- fungsi h-screen untuk menggeser secara horizontal,
+     karena div nya menggunakan width fit -->
+<div class="h-screen flex flex-col justify-between">
+  <header class="flex justify-between p-4 items-center">
+    <div class="brand">devScale.id</div>
+    <nav class="flex gap-4 bg-slate-200 px-6 py-2 rounded-full">
+      <div>Home</div>
+      <div>About</div>
+      <div>Resume</div>
+    </nav>
+    <div>Contact</div>
+  </header>
+  <!-- agar responsiveness tambahkan grid-cols1, 
+  tambahkan "lg:" sebelum grid-cols-1, 
+  untuk colspan langsung tambahkan "lg:" sebelum cols-span -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-4xl m-auto">
+    <div class="card lg:col-span-2 flex flex-col justify-between">
+      <div class="flex gap-2 items-center" >
+      <h2>Hi, I am Ronal</h2>
+       <div class="flex items-center gap-2 text-sm font-medium bg-emerald-100 border-emerald-400 text-emerald-600 rounded-full p-2 w-fit">
+          <div>Available For Opportunity</div>
+          <div class="w-4 h-4 bg-emerald-400 rounded-full animate-pulse "></div>
+       </div>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti veniam ex, voluptatibus delectus porro modi mollitia,Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, natus esse. Illum culpa assumenda.</p>
+    </div>
+    <div class="card bg-black flex items-center justify-center">
+      <img src="/tweeter.jpeg"/>
+    </div>
+    <div class="card flex justify-center items-center p-0 overflow-hidden">  
+       <!-- Menambah url di gambar -->
+      <a href="https://designstripe.com/mockups" target="_blank">
+      <img src="/hp.jpg" width="400px" height="400px" class="objectCover scale-110 hover:scale-125 hover:rotate-12 transition duration-300"  />
+      </a>       
+    </div>
+    <div class="card lg:col-span-2 space-y-2">
+      <h2>Shall i keep you in the loop?</h2>
+      <p>Content includes articles, easely to products and on going learnings</p>
+      <input type="email" placeholder="Email Address" />
+      <button id="btnConfetti">Subscribe</button>
+    </div>
+  </main>
+  <footer class="text-center">Crafted With loved, By Devscale Indonesia</footer>
+</div>
+  <script src="js/main.js" type="module"></script>  
+</body>
+</html>
